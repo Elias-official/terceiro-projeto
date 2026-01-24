@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cadastrar</title>
+<link rel="stylesheet" type="text/css" href="entrada.css" />
+</head>
+<body>
+<div id="bloco">
+<div class="login">
+  <h1>Cadastra</h1>
+  <form id="registerForm">
+    <label for="username">Usuário:</label>
+    <input type="text" id="username" name="username" required="required" /><br />
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required="required" /><br />
+    <label for="password2">Confirmar senha:</label>
+    <input type="password" id="password2" name="password2" required="required" /><br />
+    <input type="submit" value="Cadastrar" />
+  </form>
+  <div id="registerMsg" class="msg" aria-live="polite"></div>
+</div> 
+    <div  class="index">
+    <a href="index.html">Voltar para a página inicial</a>
+    </div>
+    <div class="cadastro">
+    <a href="entrada.html">Ir para login</a>
+    </div>
+</div>
+<script src="auth.js"></script>
+</body>

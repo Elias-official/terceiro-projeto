@@ -1,0 +1,140 @@
+body{
+    /* imagem de fundo com sobreposição escura para melhor leitura */
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(imagens/fundo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #050505; /* fallback sólido */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#bloco{
+    background-color: rgba(0, 0, 0, 0.32);
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,0.02);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    transition: background-color 200ms ease, box-shadow 200ms ease;
+}
+.login{
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+label{
+    display:block;
+    text-align:left;
+    margin-bottom:8px;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+input[type="text"], input[type="password"]{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    width:100%;
+    padding:10px;
+    background-color:#FF4500;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    font-weight:bold;
+    color:#FFFFFF;
+    cursor:pointer;
+    transition: background-color 200ms ease;
+    transition: 0.5s;
+}
+input[type="submit"]:hover{
+    background-color:#FF6347;
+}
+.index{
+    font-size:14px;
+    margin-top:15px;
+    color:#FFFFFF;
+}
+.index a{
+    color:#FF4500;
+    text-decoration:none;
+    transition: color 200ms ease;
+}
+.index a:hover{
+    color:#70d6e4;
+}
+.cadastro{
+    font-size:14px;
+    margin-top:10px;
+    color:#FFFFFF;
+}
+.cadastro a{
+    color:#FF4500;
+    text-decoration:none;
+    transition: color 200ms ease;
+}
+.cadastro a:hover{
+    color:#70d6e4;
+}
+
+/* Ajustes para celular (telas pequenas) */
+@media (max-width: 480px) {
+    body{
+        align-items: flex-start;
+        padding: 20px 10px;
+        background-attachment: scroll;
+        min-height: auto;
+    }
+    #bloco{
+        width: 100%;
+        max-width: 420px;
+        padding: 16px;
+        border-radius: 12px;
+        margin: 20px auto;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.65);
+    }
+    .login{
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    label{
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    input[type="text"], input[type="password"]{
+        padding: 12px;
+        font-size: 16px;
+    }
+    input[type="submit"]{
+        padding: 12px;
+        font-size: 16px;
+    }
+    .index, .cadastro{
+        font-size: 13px;
+    }
+}
